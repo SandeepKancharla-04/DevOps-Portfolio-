@@ -6,14 +6,14 @@
 }
 
 :root {
-    /* Color Palette */
-    --primary-color: #00d4ff;
-    --primary-dark: #0099cc;
-    --secondary-color: #ff6b35;
-    --accent-color: #ffd700;
-    --success-color: #00ff88;
-    --warning-color: #ffaa00;
-    --error-color: #ff4757;
+    /* Color Palette - Pink/Teal/Blue Theme */
+    --primary-color: #ff6b9d;
+    --primary-dark: #e91e63;
+    --secondary-color: #4ecdc4;
+    --accent-color: #45b7d1;
+    --success-color: #96ceb4;
+    --warning-color: #feca57;
+    --error-color: #ff6b6b;
     
     /* Neutral Colors */
     --bg-primary: #0a0a0a;
@@ -25,7 +25,7 @@
     --text-primary: #ffffff;
     --text-secondary: #e0e0e0;
     --text-muted: #b0b0b0;
-    --text-accent: #00d4ff;
+    --text-accent: #ff6b9d;
     
     --border-color: #2a2a2a;
     --border-light: #3a3a3a;
@@ -53,7 +53,7 @@
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.4);
+    --shadow-glow: 0 0 20px rgba(255, 107, 157, 0.4);
     
     /* Transitions */
     --transition-fast: 0.15s ease;
@@ -114,6 +114,20 @@ body {
     font-size: 1.5rem;
     color: var(--text-primary);
     text-decoration: none;
+}
+
+.brand-icon {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 .brand-text {
@@ -195,7 +209,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f0f23 100%);
+    background: linear-gradient(135deg, #1a0b2e 0%, #16213e 25%, #0f3460 50%, #1a0b2e 100%);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
 }
@@ -223,9 +237,9 @@ body {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(255, 107, 157, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(78, 205, 196, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(69, 183, 209, 0.1) 0%, transparent 50%);
     animation: backgroundPulse 8s ease-in-out infinite;
 }
 
@@ -246,7 +260,7 @@ body {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     opacity: 0.2;
     animation: float 6s ease-in-out infinite;
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 0 30px rgba(255, 107, 157, 0.4);
 }
 
 .shape-1 {
@@ -1249,7 +1263,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.3);
 }
 
 .form-group textarea {
