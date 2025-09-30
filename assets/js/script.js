@@ -628,3 +628,170 @@ function initLazyLoading() {
 }
 
 document.addEventListener('DOMContentLoaded', initLazyLoading);
+
+// ===== SOURCE CODE MODAL FUNCTIONS =====
+function showSourceCode(projectId) {
+    const modal = document.getElementById('sourceModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const codeDisplay = document.getElementById('codeDisplay');
+    
+    // Set project-specific title
+    const projectTitles = {
+        'multi-cloud': 'Multi-Cloud Infrastructure',
+        'cicd-pipeline': 'CI/CD Pipeline',
+        'container-orchestration': 'Container Orchestration',
+        'monitoring-solution': 'Monitoring Solution'
+    };
+    
+    modalTitle.textContent = `${projectTitles[projectId] || 'Project'} - Source Code`;
+    
+    // Show Terraform code by default
+    showTab('terraform');
+    
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeSourceModal() {
+    const modal = document.getElementById('sourceModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+function showTab(tabName) {
+    // Remove active class from all tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    
+    // Add active class to clicked tab
+    event.target.classList.add('active');
+    
+    // Show corresponding code
+    const codeDisplay = document.getElementById('codeDisplay');
+    
+    const codeSamples = {
+        terraform: `# main.tf - Multi-Cloud Infrastructure
+provider "aws" {
+  region = "us-east-1"
+}
+
+# VPC Configuration
+resource "aws_vpc" "main" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_hostnames = true
+  enable_dns_support   = true
+  
+  tags = {
+    Name = "multi-cloud-vpc"
+    Environment = "production"
+  }
+}
+
+# Security Groups
+resource "aws_security_group" "web" {
+  name_prefix = "web-sg-"
+  vpc_id      = aws_vpc.main.id
+  
+  ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+  
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}`,
+        
+        docker: `# Dockerfile - Multi-Cloud Application
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+
+FROM node:18-alpine AS runtime
+
+# Install security updates
+RUN apk update && apk upgrade
+
+# Create non-root user
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
+
+WORKDIR /app
+
+# Copy application files
+COPY --from=builder --chown=nextjs:nodejs /app/node_modules ./node_modules
+COPY --chown=nextjs:nodejs . .
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \\
+  CMD curl -f http://localhost:3000/health || exit 1
+
+USER nextjs
+
+EXPOSE 3000
+
+CMD ["npm", "start"]`,
+        
+        jenkins: `# Jenkinsfile - CI/CD Pipeline
+pipeline {
+    agent any
+    
+    environment {
+        AWS_REGION = 'us-east-1'
+        ECR_REPOSITORY = 'multi-cloud-app'
+        EKS_CLUSTER = 'multi-cloud-eks'
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                script {
+                    def image = docker.build("${ECR_REPOSITORY}:${BUILD_NUMBER}")
+                    docker.withRegistry('https://${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com', 'ecr:${AWS_REGION}:aws') {
+                        image.push("${BUILD_NUMBER}")
+                        image.push("latest")
+                    }
+                }
+            }
+        }
+        
+        stage('Test') {
+            parallel {
+                stage('Unit Tests') {
+                    steps {
+                        sh 'npm test'
+                    }
+                }
+                stage('Security Scan') {
+                    steps {
+                        sh 'npm audit --audit-level moderate'
+                    }
+                }
+            }
+        }
+    }
+}`
+    };
+    
+    codeDisplay.textContent = codeSamples[tabName] || 'Code not available';
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('sourceModal');
+    if (event.target === modal) {
+        closeSourceModal();
+    }
+}
