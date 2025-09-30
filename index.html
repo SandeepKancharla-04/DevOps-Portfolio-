@@ -3,284 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Kancharla - ServiceNow Developer & Consultant</title>
-    <meta name="description" content="Experienced ServiceNow Developer with 11+ years in ITSM, ITOM, and enterprise solutions">
+    <meta name="description" content="Sandeep K's Professional DevOps Portfolio - AWS Certified Solutions Architect with 4+ years in cloud infrastructure automation, CI/CD, and containerization">
+    <meta name="keywords" content="DevOps, AWS, Cloud Engineer, Infrastructure, Automation, CI/CD, Portfolio">
+    <meta name="author" content="Sandeep K">
+    
+    <title>Sandeep K - AWS DevOps Engineer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loader">
-            <div class="loader-circle"></div>
-            <div class="loader-text">Loading...</div>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Sandeep Kancharla</h2>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-controls">
-                <button class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <!-- Header Section -->
+    <header class="header" id="home">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">Sandeep K</a>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="particles"></div>
-        </div>
-        <div class="container">
+    <section class="hero">
+        <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text" data-aos="fade-right">
-                    <div class="hero-badge">
-                        <span>Available for Opportunities</span>
-                    </div>
-                    <h1>ServiceNow Developer & Consultant</h1>
-                    <h2>Hi, I'm <span class="highlight">Sandeep Kancharla</span></h2>
-                    <p>11+ years of expertise in ServiceNow deployment, development, and enterprise solutions. Passionate about streamlining workflows and enhancing business efficiency through technology.</p>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Sandeep K</span>
+                    </h1>
+                    <h2 class="hero-subtitle">AWS/DevOps Engineer</h2>
+                    <p class="hero-description">
+                        AWS Certified Solutions Architect with 4+ years in cloud infrastructure automation, 
+                        CI/CD, containerization, and security. Passionate about building scalable solutions 
+                        and optimizing cloud costs while maintaining high availability.
+                    </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">
-                            <span>Get In Touch</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#projects" class="btn btn-secondary">
-                            <span>View My Work</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                    <div class="hero-social">
-                        <a href="mailto:sandeepkancharla64@gmail.com" class="social-link" title="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/sandeepkancharla" class="social-link" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/sandeepkancharla" class="social-link" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="tel:+12163014526" class="social-link" title="Phone">
-                            <i class="fas fa-phone"></i>
-                        </a>
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
                 </div>
-                <div class="hero-image" data-aos="fade-left">
-                    <div class="image-container">
-                        <div class="profile-image">
-                            <img src="assets/images/sunny.jpg" alt="Sandeep Kancharla - ServiceNow Developer" loading="lazy">
-                        </div>
-                        <div class="floating-card">
-                            <div class="card-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="card-content">
-                                <h4>ServiceNow Expert</h4>
-                                <p>11+ Years Experience</p>
-                            </div>
-                        </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Professional Photo</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>About Me</h2>
-                <p>Get to know more about my background and expertise</p>
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
             </div>
             <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <h3>Experienced ServiceNow Professional</h3>
-                    <p>I'm a ServiceNow Developer/Consultant with 11+ years of experience in ServiceNow deployment, development, and administration. I specialize in designing scalable solutions, integrations, and automation to improve ITSM, ITOM, and enterprise operations.</p>
-                    <p>My passion lies in leveraging technology to streamline workflows and enhance business efficiency. I've successfully led multiple large-scale ServiceNow upgrades and integrations, consistently delivering solutions that drive operational excellence.</p>
-                    
-                    <div class="about-details">
-                        <div class="detail-item" data-aos="zoom-in" data-aos-delay="100">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>USA</p>
-                            </div>
+                <div class="about-text">
+                    <h3>Hello! I'm Sandeep K</h3>
+                    <p>
+                        I'm an AWS/DevOps Engineer with 4+ years of experience in cloud infrastructure automation, 
+                        CI/CD, containerization, and security. I have hands-on experience with Infrastructure as Code 
+                        (Terraform, AWS CloudFormation), containers (Docker, Kubernetes), and observability tools 
+                        (Amazon CloudWatch, ELK stack, Prometheus, Grafana).
+                    </p>
+                    <p>
+                        My track record includes reducing deployment errors, accelerating releases, improving resilience, 
+                        and optimizing AWS costs in enterprise environments. I'm passionate about building scalable, 
+                        secure, and cost-effective cloud solutions that drive business value.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>4+</h4>
+                            <p>Years Experience</p>
                         </div>
-                        <div class="detail-item" data-aos="zoom-in" data-aos-delay="200">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Education</h4>
-                                <p>Master of Science in Computer Science</p>
-                                <p>Campbellsville University, KY - 2020</p>
-                                <p>Bachelor's in Computer Science and Engineering</p>
-                                <p>JNTUH, India - 2013</p>
-                            </div>
+                        <div class="stat">
+                            <h4>2</h4>
+                            <p>AWS Certifications</p>
                         </div>
-                        <div class="detail-item" data-aos="zoom-in" data-aos-delay="300">
-                            <i class="fas fa-certificate"></i>
-                            <div>
-                                <h4>Certifications</h4>
-                                <p>ServiceNow Certified System Administrator (CSA)</p>
-                                <p>ServiceNow Certified Application Developer (CAD)</p>
-                            </div>
+                        <div class="stat">
+                            <h4>15+</h4>
+                            <p>Technologies Mastered</p>
                         </div>
-                        <div class="detail-item" data-aos="zoom-in" data-aos-delay="400">
-                            <i class="fas fa-language"></i>
-                            <div>
-                                <h4>Languages</h4>
-                                <p>English, Telugu, Hindi</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-stats" data-aos="fade-left">
-                    <div class="stat" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="stat-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3>11+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="stat-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <h3>100+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="stat-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h3>50+</h3>
-                        <p>Enterprise Clients</p>
-                    </div>
-                    <div class="stat" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="stat-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>25+</h3>
-                        <p>ServiceNow Modules</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Work Experience</h2>
-                <p>My professional journey and key accomplishments</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="timeline-date">Jul 2023 - Present</div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Developer / Consultant</h3>
-                            <h4>Vanguard, PA</h4>
-                            <div class="timeline-badge">Current</div>
-                        </div>
-                        <ul>
-                            <li>Customized ITSM, ITOM, ITBM, and HRSD modules</li>
-                            <li>Integrated ServiceNow with enterprise systems using REST/SOAP APIs and MID Server</li>
-                            <li>Developed custom workflows, SLAs, dashboards, and HR integrations</li>
-                            <li>Implemented SecOps including Threat Intelligence, SIR, and Vulnerability Management</li>
-                            <li>Designed on-prem architecture, DR/backup strategies, and AIOps dashboards</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-date">Oct 2020 - Jun 2023</div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>ServiceNow Admin/Developer</h3>
-                            <h4>Wells Fargo, NC</h4>
-                        </div>
-                        <ul>
-                            <li>Enhanced ITSM modules including Incident, Change, and Problem Management</li>
-                            <li>Developed Service Portals and dynamic layouts</li>
-                            <li>Implemented ITOM Event Management and Discovery</li>
-                            <li>Built Kafka-based real-time integrations and APIGEE API Management</li>
-                            <li>Led platform upgrades from Jakarta to Tokyo</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-date">Jan 2018 - Sep 2020</div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>ServiceNow Admin/Developer</h3>
-                            <h4>Aetna, GA</h4>
-                        </div>
-                        <ul>
-                            <li>Developed ACLs, Catalog Items, SLAs, and workflows</li>
-                            <li>Automated CI/CD pipelines with Ansible</li>
-                            <li>Built Power BI reports for KPIs and SLA monitoring</li>
-                            <li>Integrated third-party systems with CSM</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-date">Jan 2015 - Dec 2017</div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Admin / Developer</h3>
-                            <h4>DXC Technology, India</h4>
-                        </div>
-                        <ul>
-                            <li>Managed ITSM modules and CMDB</li>
-                            <li>Built Service Catalog, UI pages, reports, and dashboards</li>
-                            <li>Configured ACLs, workflows, CTI integrations, and Performance Analytics</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="timeline-date">Jan 2014 - Dec 2014</div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>ServiceNow Admin/Developer</h3>
-                            <h4>Juspay Technologies, India</h4>
-                        </div>
-                        <ul>
-                            <li>Managed Service Catalog, SLAs, and ITAM</li>
-                            <li>Implemented REST API integrations</li>
-                            <li>Enhanced CSM module with knowledge base and self-service portal</li>
-                            <li>Improved request handling efficiency by 15%</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -288,231 +122,110 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section class="skills" id="skills">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Technical Skills</h2>
-                <p>Technologies and tools I work with</p>
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
             </div>
             <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <div class="category-header">
-                        <i class="fas fa-cogs"></i>
-                        <h3>ServiceNow Modules</h3>
-                    </div>
-                    <div class="skill-list">
+                <div class="skill-category">
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-tag">ITSM</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="95"></div>
-                            </div>
+                            <i class="fab fa-aws"></i>
+                            <span>Amazon EC2</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">ITOM</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="90"></div>
-                            </div>
+                            <i class="fab fa-aws"></i>
+                            <span>Amazon S3</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">ITBM</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="85"></div>
-                            </div>
+                            <i class="fab fa-aws"></i>
+                            <span>AWS IAM</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">SecOps</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="80"></div>
-                            </div>
+                            <i class="fab fa-aws"></i>
+                            <span>Amazon RDS</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">HRSD</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="88"></div>
-                            </div>
+                            <i class="fab fa-aws"></i>
+                            <span>AWS Lambda</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">CSM</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="92"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">CMDB</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="87"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">SAM</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="83"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">HAM</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">GRC</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="78"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">PPM</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="82"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">FSM</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="80"></div>
-                            </div>
+                            <i class="fab fa-aws"></i>
+                            <span>Amazon VPC</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Development & Integration</h3>
-                    </div>
-                    <div class="skill-list">
+                <div class="skill-category">
+                    <h3>DevOps & CI/CD</h3>
+                    <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-tag">JavaScript</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="90"></div>
-                            </div>
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">REST APIs</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="95"></div>
-                            </div>
+                            <i class="fab fa-kubernetes"></i>
+                            <span>Kubernetes</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">SOAP APIs</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="88"></div>
-                            </div>
+                            <i class="fas fa-cogs"></i>
+                            <span>Jenkins</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">App Engine Studio</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="85"></div>
-                            </div>
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Actions</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">HTML/CSS</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="92"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">SQL</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="87"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">LDAP</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="83"></div>
-                            </div>
+                            <i class="fas fa-code-branch"></i>
+                            <span>Git</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <div class="category-header">
-                        <i class="fas fa-cloud"></i>
-                        <h3>Cloud & DevOps</h3>
-                    </div>
-                    <div class="skill-list">
+                <div class="skill-category">
+                    <h3>Infrastructure as Code</h3>
+                    <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-tag">Azure</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="85"></div>
-                            </div>
+                            <i class="fas fa-mountain"></i>
+                            <span>Terraform</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">Kubernetes (AKS)</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="80"></div>
-                            </div>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>CloudFormation</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">Ansible</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="82"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">Apache Kafka</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="78"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">AIOps</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">Agile</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-tag">DevOps</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="88"></div>
-                            </div>
+                            <i class="fas fa-file-code"></i>
+                            <span>Ansible</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <div class="category-header">
-                        <i class="fas fa-tools"></i>
-                        <h3>ServiceNow Tools</h3>
-                    </div>
-                    <div class="skill-list">
+                <div class="skill-category">
+                    <h3>Programming & Monitoring</h3>
+                    <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-tag">Discovery</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="88"></div>
-                            </div>
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">Service Mapping</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="85"></div>
-                            </div>
+                            <i class="fas fa-terminal"></i>
+                            <span>Bash</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">Performance Analytics</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="82"></div>
-                            </div>
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">Power BI</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="80"></div>
-                            </div>
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-tag">MID Server</span>
-                            <div class="skill-progress">
-                                <div class="progress-bar" data-progress="90"></div>
-                            </div>
+                            <i class="fas fa-chart-line"></i>
+                            <span>CloudWatch</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>ELK Stack</span>
                         </div>
                     </div>
                 </div>
@@ -520,192 +233,296 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Client Testimonials</h2>
-                <p>What clients and colleagues say about my work</p>
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My career journey and achievements</p>
             </div>
-            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="100">
-                <div class="testimonial-card active">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>"Sandeep's expertise in ServiceNow is exceptional. He delivered a comprehensive ITSM solution that transformed our operations and improved efficiency by 40%."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>John Smith</h4>
-                                <p>IT Director, Vanguard</p>
-                            </div>
-                        </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>AWS/DevOps Engineer</h3>
+                        <h4>Wells Fargo – Charlotte, NC</h4>
+                        <span class="timeline-date">May 2023 – Present</span>
+                        <ul>
+                            <li>Automated multi-account AWS provisioning using Terraform modules (VPC, subnets, security groups, IAM roles) with S3 remote state and DynamoDB locking; added policy-as-code to prevent drift</li>
+                            <li>Built CI/CD in Jenkins and GitHub Actions with approvals, environment promotions, artifact versioning, and zero-downtime rolling deployments via Auto Scaling and Elastic Load Balancing health checks</li>
+                            <li>Implemented observability using Amazon CloudWatch metrics/logs/alarms/dashboards; integrated alerting via Amazon SNS to reduce MTTR</li>
+                            <li>Strengthened security with least-privilege IAM, AWS KMS encryption, S3 bucket policies, VPC Flow Logs, and centralized secrets via AWS Systems Manager Parameter Store/AWS Secrets Manager (with rotation)</li>
+                            <li>Optimized cost via instance right-sizing, RDS storage autoscaling, and S3 lifecycle transitions while maintaining SLAs and availability targets</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>"Working with Sandeep was a game-changer for our ServiceNow implementation. His technical skills and problem-solving abilities are outstanding."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Sarah Johnson</h4>
-                                <p>Senior Manager, Wells Fargo</p>
-                            </div>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>DevOps Engineer</h3>
+                        <h4>DXC Technology – India</h4>
+                        <span class="timeline-date">Oct 2020 – Jul 2022</span>
+                        <ul>
+                            <li>Designed secure AWS foundations (Amazon VPC, IAM, Amazon EC2, Amazon S3, Amazon RDS) with tagging, automated backups, and hardened AMIs for compliance and governance</li>
+                            <li>Automated provisioning with Terraform and configuration with Ansible roles/playbooks, reducing manual effort and drift across environments</li>
+                            <li>Built multibranch Jenkins pipelines (Git webhooks) for static checks, unit tests, image builds, security scans, and deployments to Amazon EC2/ECR</li>
+                            <li>Centralized logging with ELK and Amazon CloudWatch Logs; created Kibana dashboards for proactive monitoring and RCA</li>
+                            <li>Authored reusable Terraform modules; enforced S3+DynamoDB remote state and workspace strategy across dev/test/prod</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>"Sandeep's knowledge of ServiceNow modules and integration capabilities helped us achieve our automation goals ahead of schedule."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Mike Davis</h4>
-                                <p>CTO, Aetna</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-dots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Latest Articles</h2>
-                <p>Insights and thoughts on ServiceNow and technology</p>
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work and achievements</p>
             </div>
-            <div class="blog-grid">
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="blog-image">
-                        <div class="blog-category">ServiceNow</div>
-                    </div>
-                    <div class="blog-content">
-                        <h3>Best Practices for ServiceNow ITSM Implementation</h3>
-                        <p>Learn the key strategies and best practices for successful ServiceNow ITSM implementation in enterprise environments.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-calendar"></i> Dec 15, 2024</span>
-                            <span><i class="fas fa-clock"></i> 5 min read</span>
+            
+            <!-- Project Categories -->
+            <div class="project-categories">
+                <button class="category-btn active" data-category="all">All Projects</button>
+                <button class="category-btn" data-category="aws">AWS & Cloud</button>
+                <button class="category-btn" data-category="devops">DevOps & CI/CD</button>
+                <button class="category-btn" data-category="automation">Automation</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-showcase">
+                <!-- Project 1: Multi-Cloud Infrastructure -->
+                <div class="project-card featured" data-category="aws">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
                         </div>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <div class="project-badge">Featured</div>
                     </div>
-                </article>
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="blog-image">
-                        <div class="blog-category">Integration</div>
-                    </div>
-                    <div class="blog-content">
-                        <h3>ServiceNow REST API Integration Guide</h3>
-                        <p>A comprehensive guide to integrating ServiceNow with external systems using REST APIs and best practices.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-calendar"></i> Dec 10, 2024</span>
-                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                    <div class="project-content">
+                        <h3>Multi-Cloud Infrastructure Automation</h3>
+                        <p>Automated infrastructure provisioning across AWS, Azure, and GCP using Terraform and Ansible. Implemented monitoring and alerting systems with 99.9% uptime.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">40%</span>
+                                <span class="stat-label">Cost Reduction</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Cloud Providers</span>
+                            </div>
                         </div>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="blog-image">
-                        <div class="blog-category">Automation</div>
-                    </div>
-                    <div class="blog-content">
-                        <h3>Automating ServiceNow Workflows with AIOps</h3>
-                        <p>Explore how AIOps can enhance ServiceNow automation and improve operational efficiency in modern IT environments.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-calendar"></i> Dec 5, 2024</span>
-                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        <div class="project-tech">
+                            <span class="tech-tag aws">AWS</span>
+                            <span class="tech-tag terraform">Terraform</span>
+                            <span class="tech-tag ansible">Ansible</span>
+                            <span class="tech-tag docker">Docker</span>
                         </div>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-ghost">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
                     </div>
-                </article>
+                </div>
+
+                <!-- Project 2: Kubernetes CI/CD Pipeline -->
+                <div class="project-card" data-category="devops">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Kubernetes CI/CD Pipeline</h3>
+                        <p>Built a complete CI/CD pipeline using Jenkins, Docker, and Kubernetes for microservices deployment with automated testing and rollback capabilities.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">60%</span>
+                                <span class="stat-label">Faster Deployments</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Microservices</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag kubernetes">Kubernetes</span>
+                            <span class="tech-tag jenkins">Jenkins</span>
+                            <span class="tech-tag docker">Docker</span>
+                            <span class="tech-tag helm">Helm</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-ghost">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Security-First Cloud Architecture -->
+                <div class="project-card" data-category="aws">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Security-First Cloud Architecture</h3>
+                        <p>Designed and implemented a secure cloud architecture with zero-trust networking, encryption at rest and in transit, and automated security scanning.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Compliance</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Security Incidents</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag aws">AWS Security</span>
+                            <span class="tech-tag waf">WAF</span>
+                            <span class="tech-tag cloudtrail">CloudTrail</span>
+                            <span class="tech-tag guardduty">GuardDuty</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-ghost">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Infrastructure Monitoring Dashboard -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Infrastructure Monitoring Dashboard</h3>
+                        <p>Real-time monitoring dashboard using ELK stack, Prometheus, and Grafana for comprehensive infrastructure visibility and alerting.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Metrics</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Monitoring</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag elk">ELK Stack</span>
+                            <span class="tech-tag prometheus">Prometheus</span>
+                            <span class="tech-tag grafana">Grafana</span>
+                            <span class="tech-tag python">Python</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-ghost">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Get In Touch</h2>
-                <p>Let's discuss how I can help with your ServiceNow needs</p>
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
             </div>
             <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-item" data-aos="zoom-in" data-aos-delay="100">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>sandeepkancharla64@gmail.com</p>
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sunnysandeep0707@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (216) 301-4526</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Charlotte, NC</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-item" data-aos="zoom-in" data-aos-delay="200">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>(216) 301-4526</p>
-                        </div>
-                    </div>
-                    <div class="contact-item" data-aos="zoom-in" data-aos-delay="300">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>USA</p>
-                        </div>
-                    </div>
-                    <div class="contact-item" data-aos="zoom-in" data-aos-delay="400">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/sandeepkancharla</p>
-                        </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-medium"></i>
+                        </a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm" data-aos="fade-left">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name">Your Name</label>
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required>
-                        <label for="email">Your Email</label>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" required>
-                        <label for="subject">Subject</label>
-                        <i class="fas fa-tag"></i>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <label for="message">Your Message</label>
-                        <i class="fas fa-comment"></i>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -714,64 +531,21 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <h3>Sandeep Kancharla</h3>
-                        <p>ServiceNow Developer & Consultant</p>
-                    </div>
-                    <div class="footer-social">
-                        <a href="mailto:sandeepkancharla64@gmail.com" class="social-link" title="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/sandeepkancharla" class="social-link" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/sandeepkancharla" class="social-link" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+                <div class="footer-text">
+                    <p>&copy; 2024 Sandeep K. All rights reserved.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                 </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li>ServiceNow Development</li>
-                        <li>ITSM Implementation</li>
-                        <li>System Integration</li>
-                        <li>Consulting</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> sandeepkancharla64@gmail.com</li>
-                        <li><i class="fas fa-phone"></i> (216) 301-4526</li>
-                        <li><i class="fas fa-map-marker-alt"></i> USA</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Sandeep Kancharla. All rights reserved.</p>
-                <p>Designed with <i class="fas fa-heart"></i> for excellence</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
