@@ -195,7 +195,15 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f0f23 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .hero-background {
@@ -205,6 +213,25 @@ body {
     right: 0;
     bottom: 0;
     z-index: 1;
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+    animation: backgroundPulse 8s ease-in-out infinite;
+}
+
+@keyframes backgroundPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
 }
 
 .floating-shapes {
@@ -217,8 +244,9 @@ body {
     position: absolute;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    opacity: 0.15;
+    opacity: 0.2;
     animation: float 6s ease-in-out infinite;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
 }
 
 .shape-1 {
@@ -259,19 +287,22 @@ body {
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-2xl);
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     position: relative;
     z-index: 2;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
+    min-height: 100vh;
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 800px;
+    margin-bottom: var(--spacing-2xl);
 }
 
 .hero-badge {
@@ -300,22 +331,57 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 800;
     line-height: 1.1;
     margin-bottom: var(--spacing-lg);
     animation: slideInLeft 0.8s ease 0.2s both;
+    text-align: center;
+    position: relative;
 }
 
 .title-line {
     display: block;
+    position: relative;
 }
 
 .highlight {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background-size: 200% 200%;
+    animation: textShine 3s ease-in-out infinite;
+    position: relative;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: blur(1px);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+@keyframes textShine {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-accent);
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+    animation: slideInLeft 0.8s ease 0.3s both;
 }
 
 .hero-description {
@@ -324,6 +390,9 @@ body {
     margin-bottom: var(--spacing-xl);
     line-height: 1.7;
     animation: slideInLeft 0.8s ease 0.4s both;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-stats {
@@ -1225,13 +1294,13 @@ section {
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
     .hero-container {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        flex-direction: column;
         text-align: center;
     }
     
     .hero-visual {
-        order: -1;
+        order: 1;
+        margin-top: var(--spacing-xl);
     }
     
     .about-content {
