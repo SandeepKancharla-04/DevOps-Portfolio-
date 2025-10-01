@@ -1287,9 +1287,9 @@ body {
     }
     
     .photo-container {
-        width: 280px;
-        height: 280px;
-        transform: perspective(1000px) rotateY(-2deg) rotateX(2deg);
+        width: 250px;
+        height: 320px;
+        transform: none;
     }
     
     .contact-content {
@@ -1868,16 +1868,133 @@ body {
         padding: 2rem;
     }
     
+    /* About Section Responsive */
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about-text {
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+    
+    .about-text h3 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .about-text h4 {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
     /* Photo Section Responsive */
-    .photo-frame {
-        width: 240px;
-        height: 300px;
+    .photo-section {
+        margin-bottom: 2rem;
+    }
+    
+    .photo-container {
+        width: 250px;
+        height: 320px;
     }
     
     .photo-badge {
+        padding: 10px 12px;
         font-size: 0.8rem;
-        padding: 6px 12px;
-        margin-top: 15px;
+    }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+    .photo-container {
+        width: 220px;
+        height: 280px;
+    }
+    
+    .photo-badge {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+    
+    /* Additional Mobile Improvements */
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .section-header p {
+        font-size: 0.9rem;
+    }
+    
+    .about-text h3 {
+        font-size: 1.8rem;
+    }
+    
+    .about-text h4 {
+        font-size: 0.9rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+    
+    .project-title {
+        font-size: 1.1rem;
+    }
+    
+    .project-description {
+        font-size: 0.85rem;
+    }
+    
+    .experience-item {
+        padding-left: 50px;
+    }
+    
+    .experience-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .education-item {
+        margin-bottom: 2rem;
+    }
+    
+    .education-content {
+        padding: 1.5rem;
+    }
+    
+    .achievement-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 1rem;
     }
 }
 
