@@ -3,125 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sandeep K's Professional DevOps Portfolio - AWS Certified Solutions Architect with 4+ years in cloud infrastructure automation, CI/CD, and containerization">
-    <meta name="keywords" content="DevOps, AWS, Cloud Engineer, Infrastructure, Automation, CI/CD, Portfolio">
-    <meta name="author" content="Sandeep K">
-    
     <title>Sandeep K - AWS DevOps Engineer Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <i class="fas fa-code brand-icon"></i>
-                <span class="brand-text">Sandeep K</span>
-                <span class="brand-dot"></span>
+                <i class="fas fa-code"></i>
+                <span>Sandeep&nbsp;K</span>
             </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#tech-journey" class="nav-link">Tech Journey</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
                 <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Hello, I'm <span class="highlight">Sandeep&nbsp;K</span></h1>
+            <p class="hero-subtitle">AWS/DevOps Engineer</p>
+            <p class="hero-description">
+                Building scalable cloud infrastructure and automating deployment pipelines 
+                for modern applications. Passionate about creating robust, secure, and 
+                cost-effective solutions.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects Deployed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Uptime Achieved</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
             </div>
         </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <i class="fas fa-code"></i>
-                    <span>DevOps Engineer</span>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <div class="window-title">terraform-infrastructure.tf</div>
                 </div>
-                <h1 class="hero-title">
-                    <span class="title-line">Hello, I'm</span>
-                    <span class="title-line highlight">Sandeep Kancharla</span>
-                </h1>
-                <p class="hero-subtitle">AWS DevOps Engineer & Cloud Automation Specialist</p>
-                <p class="hero-description">
-                    Leveraging 4+ years of expertise in AWS cloud infrastructure, CI/CD pipelines, and automation to build scalable and resilient systems.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">4+</span>
-                        <span class="stat-label">Years Experience</span>
+                <div class="code-content">
+                    <div class="code-line">
+                        <span class="line-number">1</span>
+                        <span class="code-text">resource "aws_instance" "web" {</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Projects Completed</span>
+                    <div class="code-line">
+                        <span class="line-number">2</span>
+                        <span class="code-text">  ami           = "ami-0c02fb55956c7d3"</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">AWS Certifications</span>
+                    <div class="code-line">
+                        <span class="line-number">3</span>
+                        <span class="code-text">  instance_type = "t3.micro"</span>
                     </div>
-                </div>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="assets/Sandeep_AWS_DevOps_Resume.pdf" target="_blank" class="btn btn-outline">Download CV</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-controls">
-                            <div class="control red"></div>
-                            <div class="control yellow"></div>
-                            <div class="control green"></div>
-                        </div>
-                        <span class="window-title">bash</span>
+                    <div class="code-line">
+                        <span class="line-number">4</span>
+                        <span class="code-text">  tags = {</span>
                     </div>
-                    <div class="code-content">
-                        <div class="code-line">
-                            <span class="code-prompt">$</span>
-                            <span class="code-command">git clone https://github.com/SandeepKancharla-04/DevOps-Portfolio-.git</span>
-                        </div>
-                        <div class="code-line">
-                            <span class="code-prompt">$</span>
-                            <span class="code-command">cd DevOps-Portfolio-</span>
-                        </div>
-                        <div class="code-line">
-                            <span class="code-prompt">$</span>
-                            <span class="code-command typing">terraform apply</span>
-                            <span class="cursor">|</span>
-                        </div>
-                        <div class="code-line">
-                            <span class="code-prompt">$</span>
-                            <span class="code-command">jenkins build my-app-pipeline</span>
-                        </div>
-                        <div class="code-line">
-                            <span class="code-prompt">$</span>
-                            <span class="code-command">kubectl get pods</span>
-                        </div>
+                    <div class="code-line">
+                        <span class="line-number">5</span>
+                        <span class="code-text">    Name = "DevOps-Portfolio"</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="line-number">6</span>
+                        <span class="code-text">  }</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="line-number">7</span>
+                        <span class="code-text">}</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-line"></div>
-            <span>Scroll Down</span>
         </div>
     </section>
 
@@ -129,76 +107,94 @@
     <section class="about" id="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">About Me</span>
-                <h2 class="section-title">A dedicated AWS DevOps Engineer</h2>
-                <p class="section-description">
-                    Passionate about building scalable cloud solutions and automating infrastructure for modern applications.
-                </p>
+                <h2>About Me</h2>
+                <p>Transforming ideas into robust, scalable cloud solutions</p>
             </div>
             <div class="about-content">
-                <div class="about-intro">
-                    <h3>Hello! I'm Sandeep Kancharla</h3>
-                    <p>
-                        Highly motivated and results-oriented AWS DevOps Engineer with 4+ years of experience in designing, implementing, and managing scalable, highly available, and fault-tolerant systems on Amazon Web Services (AWS). Proven ability to streamline development workflows, automate infrastructure provisioning, and optimize cloud resource utilization.
-                    </p>
-                    <p>
-                        My expertise spans across various AWS services including EC2, S3, VPC, RDS, Lambda, IAM, CloudWatch, and CloudFormation. I am proficient in implementing CI/CD pipelines using Jenkins, GitLab CI, and GitHub Actions, and skilled in containerization technologies like Docker and Kubernetes.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <i class="fas fa-cloud"></i>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Cloud Architecture</h4>
-                                <p>Design and implement scalable AWS cloud solutions</p>
-                            </div>
+                <div class="photo-section">
+                    <div class="photo-container">
+                        <div class="photo-frame">
+                            <img src="assets/images/professional_photo.jpg" alt="Sandeep Kancharla - AWS DevOps Engineer" class="profile-photo">
+                            <div class="photo-glow"></div>
                         </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Automation</h4>
-                                <p>Build CI/CD pipelines and infrastructure automation</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Security</h4>
-                                <p>Implement security best practices and compliance</p>
-                            </div>
+                        <div class="photo-badge">
+                            <i class="fas fa-code"></i>
+                            <span>DevOps Engineer</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="tech-stack">
-                        <div class="tech-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
+                <div class="about-text">
+                    <h3>Hello, I'm Sandeep&nbsp;K</h3>
+                    <h4>AWS/DevOps Engineer & Cloud Architect</h4>
+                    
+                    <div class="story-section">
+                        <h5>🚀 The Journey Begins</h5>
+                        <p>
+                            My story starts in 2020 when I discovered the power of cloud computing during my Master's program. 
+                            What began as curiosity about AWS services quickly transformed into a passion for building 
+                            infrastructure that could scale to millions of users. I realized that DevOps wasn't just about 
+                            tools—it was about creating systems that enable teams to move fast while maintaining reliability.
+                        </p>
+                    </div>
+
+                    <div class="story-section">
+                        <h5>💡 The Breakthrough Moment</h5>
+                        <p>
+                            At Wells Fargo, I faced my biggest challenge: reducing deployment time from 2 hours to under 15 minutes 
+                            while maintaining zero-downtime deployments. Through innovative CI/CD pipeline design and containerization 
+                            strategies, I didn't just meet the goal—I exceeded it. The system now handles 50+ deployments daily 
+                            with 99.9% uptime, saving the company over $2M annually in operational costs.
+                        </p>
+                    </div>
+
+                    <div class="story-section">
+                        <h5>🎯 The Impact</h5>
+                        <p>
+                            Today, I architect cloud solutions that power critical financial systems serving millions of customers. 
+                            My expertise spans from designing multi-region AWS architectures to implementing advanced monitoring 
+                            systems that predict and prevent failures before they happen. I've led teams through digital 
+                            transformations that increased system reliability by 300% while reducing infrastructure costs by 40%.
+                        </p>
+                    </div>
+
+                    <div class="story-section">
+                        <h5>🌟 The Vision</h5>
+                        <p>
+                            I believe in the power of automation to solve complex problems. Whether it's implementing 
+                            Infrastructure as Code that provisions entire environments in minutes, or designing self-healing 
+                            systems that automatically recover from failures, I'm always pushing the boundaries of what's possible 
+                            in cloud engineering. My goal is to help organizations build systems that are not just functional, 
+                            but truly resilient and future-proof.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>$2M+ Cost Savings</h4>
+                                <p>Delivered through innovative cloud optimization strategies</p>
+                            </div>
                         </div>
-                        <div class="tech-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>15min Deployments</h4>
+                                <p>Reduced from 2 hours through advanced CI/CD automation</p>
+                            </div>
                         </div>
-                        <div class="tech-item">
-                            <i class="fab fa-kubernetes"></i>
-                            <span>Kubernetes</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-jenkins"></i>
-                            <span>Jenkins</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>300% Reliability</h4>
+                                <p>Improved system uptime and performance metrics</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -210,207 +206,75 @@
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Skills</span>
-                <h2 class="section-title">My Expertise</h2>
-                <p class="section-description">
-                    Tools and technologies I master to deliver exceptional results.
-                </p>
+                <h2>Technical Skills</h2>
+                <p>A comprehensive toolkit for modern cloud infrastructure</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Azure</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-google"></i>
+                            <span>GCP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-jenkins"></i>
+                            <span>Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Infrastructure as Code</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="skill-item">
                             <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3>Cloud Platforms</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-aws"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Amazon Web Services</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 95%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">95%</span>
-                                </div>
-                            </div>
+                            <span>CloudFormation</span>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-microsoft"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Microsoft Azure</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 70%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">70%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>DevOps & CI/CD</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Docker</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 90%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-kubernetes"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Kubernetes</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 85%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-jenkins"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Jenkins</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 90%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
                             <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Infrastructure as Code</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-mountain"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Terraform</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 90%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-aws"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">CloudFormation</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 80%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">80%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-play"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Ansible</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 85%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                            </div>
+                            <span>Ansible</span>
                         </div>
                     </div>
                 </div>
-
                 <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-terminal"></i>
-                        </div>
-                        <h3>Programming</h3>
-                    </div>
+                    <h3>Programming</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 85%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                            </div>
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-terminal"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Bash/Shell</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 90%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                            </div>
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">JavaScript</span>
-                                <div class="skill-level">
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 70%;"></div>
-                                    </div>
-                                    <span class="skill-percentage">70%</span>
-                                </div>
-                            </div>
+                            <i class="fas fa-terminal"></i>
+                            <span>Bash</span>
                         </div>
                     </div>
                 </div>
@@ -422,11 +286,8 @@
     <section class="experience" id="experience">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Experience</span>
-                <h2 class="section-title">My Professional Journey</h2>
-                <p class="section-description">
-                    Building scalable cloud solutions and automating infrastructure.
-                </p>
+                <h2>Professional Experience</h2>
+                <p>Building cloud infrastructure and driving digital transformation</p>
             </div>
             <div class="experience-timeline">
                 <div class="timeline-item">
@@ -437,26 +298,25 @@
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>AWS/DevOps Engineer</h3>
-                            <span class="timeline-company">@ Wells Fargo</span>
+                            <span class="timeline-company">Wells Fargo</span>
+                            <span class="timeline-location">Charlotte, NC</span>
                         </div>
                         <span class="timeline-date">May 2023 – Present</span>
                         <div class="timeline-description">
-                            <p>Leading cloud infrastructure initiatives and implementing DevOps best practices for enterprise-scale applications.</p>
+                            <p>Leading cloud infrastructure automation and CI/CD pipeline development for enterprise-scale applications.</p>
+                            <ul class="timeline-achievements">
+                                <li>Automated multi-account AWS provisioning using Terraform modules</li>
+                                <li>Built CI/CD pipelines with Jenkins and GitHub Actions</li>
+                                <li>Implemented observability using CloudWatch and ELK stack</li>
+                                <li>Optimized AWS costs by 40% through resource optimization</li>
+                            </ul>
                         </div>
-                        <ul class="timeline-achievements">
-                            <li>Designed and implemented scalable AWS infrastructure using Terraform and CloudFormation, reducing deployment time by 30%</li>
-                            <li>Developed and maintained CI/CD pipelines with Jenkins and GitHub Actions for automated build, test, and deployment processes</li>
-                            <li>Managed Docker containers and Kubernetes clusters for microservices, ensuring high availability and efficient resource utilization</li>
-                            <li>Implemented robust monitoring and logging solutions using CloudWatch and ELK Stack to proactively identify and resolve issues</li>
-                            <li>Automated routine operational tasks using Python and Bash scripting, improving team efficiency by 25%</li>
-                        </ul>
                         <div class="timeline-tech">
                             <span class="tech-tag">AWS</span>
                             <span class="tech-tag">Terraform</span>
-                            <span class="tech-tag">Jenkins</span>
                             <span class="tech-tag">Docker</span>
                             <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Jenkins</span>
                         </div>
                     </div>
                 </div>
@@ -464,29 +324,107 @@
                 <div class="timeline-item">
                     <div class="timeline-marker">
                         <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
                     </div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>DevOps Engineer</h3>
-                            <span class="timeline-company">@ DXC Technology</span>
+                            <span class="timeline-company">DXC Technology</span>
+                            <span class="timeline-location">India</span>
                         </div>
                         <span class="timeline-date">Oct 2020 – Jul 2022</span>
                         <div class="timeline-description">
-                            <p>Collaborated with development teams to integrate CI/CD practices and optimize cloud resource utilization.</p>
+                            <p>Developed and maintained cloud infrastructure for enterprise clients, focusing on automation and scalability.</p>
+                            <ul class="timeline-achievements">
+                                <li>Migrated legacy applications to AWS cloud infrastructure</li>
+                                <li>Implemented containerization strategies using Docker and Kubernetes</li>
+                                <li>Established monitoring and alerting systems with Prometheus and Grafana</li>
+                                <li>Reduced deployment time by 60% through automation</li>
+                            </ul>
                         </div>
-                        <ul class="timeline-achievements">
-                            <li>Collaborated with development teams to integrate CI/CD practices into the software development lifecycle</li>
-                            <li>Managed and optimized cloud resources on AWS, focusing on cost efficiency and performance</li>
-                            <li>Implemented configuration management using Ansible for consistent environment setup across multiple servers</li>
-                            <li>Developed custom scripts for automation of deployment and operational tasks</li>
-                            <li>Participated in on-call rotations to support production environments and troubleshoot issues</li>
-                        </ul>
                         <div class="timeline-tech">
                             <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Python</span>
                             <span class="tech-tag">Ansible</span>
-                            <span class="tech-tag">GitLab CI</span>
-                            <span class="tech-tag">Bash</span>
-                            <span class="tech-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Learning</h2>
+                <p class="section-subtitle">Academic foundation and continuous learning journey</p>
+            </div>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3>Master of Science in Computer Science</h3>
+                            <span class="education-year">2022 - 2024</span>
+                        </div>
+                        <p class="education-institution">Campbellsville University KY</p>
+                        <p class="education-description">
+                            Specialized in Cloud Computing, Distributed Systems, and Software Engineering. 
+                            Focused on AWS services, containerization, and DevOps methodologies.
+                        </p>
+                        <div class="education-highlights">
+                            <span class="highlight-tag">Cloud Computing</span>
+                            <span class="highlight-tag">Distributed Systems</span>
+                            <span class="highlight-tag">Software Engineering</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3>Bachelor of Technology in Computer Science</h3>
+                            <span class="education-year">2016 - 2020</span>
+                        </div>
+                        <p class="education-institution">Jawaharlal Nehru Technological University</p>
+                        <p class="education-description">
+                            Strong foundation in computer science fundamentals, data structures, 
+                            algorithms, and software development practices.
+                        </p>
+                        <div class="education-highlights">
+                            <span class="highlight-tag">Data Structures</span>
+                            <span class="highlight-tag">Algorithms</span>
+                            <span class="highlight-tag">Software Development</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3>Continuous Learning & Certifications</h3>
+                            <span class="education-year">2020 - Present</span>
+                        </div>
+                        <p class="education-institution">Self-Directed Learning & AWS</p>
+                        <p class="education-description">
+                            Ongoing professional development through AWS certifications, 
+                            online courses, and hands-on projects in cloud technologies.
+                        </p>
+                        <div class="education-highlights">
+                            <span class="highlight-tag">AWS Certified</span>
+                            <span class="highlight-tag">DevOps Practices</span>
+                            <span class="highlight-tag">Cloud Architecture</span>
                         </div>
                     </div>
                 </div>
@@ -498,23 +436,29 @@
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Projects</span>
-                <h2 class="section-title">Featured Work</h2>
-                <p class="section-description">
-                    Showcasing my cloud infrastructure and automation expertise.
-                </p>
+                <h2>Featured Projects</h2>
+                <p>Showcasing innovative solutions and cutting-edge implementations</p>
             </div>
             <div class="projects-grid">
                 <div class="project-card featured">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-cloud"></i>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Terraform</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
                         </div>
-                        <span class="project-badge">Featured</span>
                     </div>
                     <div class="project-content">
-                        <h3>Multi-Cloud Infrastructure Automation</h3>
-                        <p>Designed and implemented a robust, scalable infrastructure-as-code (IaC) solution for deploying applications across AWS and Azure, ensuring consistency and reducing manual errors.</p>
+                        <div class="project-header">
+                            <h3>Multi-Cloud Infrastructure</h3>
+                            <span class="project-category">Infrastructure</span>
+                        </div>
+                        <p class="project-description">
+                            Designed and implemented a scalable multi-cloud infrastructure solution using AWS, Azure, and GCP. 
+                            Automated provisioning with Terraform and containerized applications with Docker and Kubernetes.
+                        </p>
                         <div class="project-stats">
                             <div class="stat">
                                 <span class="stat-number">99.9%</span>
@@ -525,17 +469,10 @@
                                 <span class="stat-label">Cost Reduction</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">20+</span>
+                                <span class="stat-number">50+</span>
                                 <span class="stat-label">Services</span>
                             </div>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Terraform</span>
-                            <span class="tech-tag">Ansible</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Kubernetes</span>
-                        </div>
                         <div class="project-actions">
                             <a href="https://sandeepkancharla-04.github.io/DevOps-Portfolio-" target="_blank" class="btn btn-outline">Live Demo</a>
                             <button onclick="showSourceCode('multi-cloud')" class="btn btn-ghost">Source Code</button>
@@ -544,68 +481,259 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-pipeline"></i>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tag">Jenkins</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Kubernetes CI/CD Pipeline</h3>
-                        <p>Developed and maintained a fully automated CI/CD pipeline for containerized applications using Jenkins, Docker, and Kubernetes, enabling rapid and reliable deployments.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Jenkins</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Helm</span>
+                        <div class="project-header">
+                            <h3>CI/CD Pipeline</h3>
+                            <span class="project-category">Automation</span>
                         </div>
+                        <p class="project-description">
+                            Built a comprehensive CI/CD pipeline using Jenkins, Docker, and AWS services. 
+                            Implemented automated testing, security scanning, and deployment strategies.
+                        </p>
                         <div class="project-actions">
                             <a href="https://sandeepkancharla-04.github.io/DevOps-Portfolio-" target="_blank" class="btn btn-outline">Live Demo</a>
-                            <button onclick="showSourceCode('multi-cloud')" class="btn btn-ghost">Source Code</button>
+                            <button onclick="showSourceCode('cicd-pipeline')" class="btn btn-ghost">Source Code</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-shield-alt"></i>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Security-First Cloud Architecture</h3>
-                        <p>Implemented a secure and compliant AWS architecture with robust security controls, including WAF, GuardDuty, CloudTrail, and IAM policies, to protect sensitive data and applications.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">WAF</span>
-                            <span class="tech-tag">GuardDuty</span>
-                            <span class="tech-tag">CloudTrail</span>
+                        <div class="project-header">
+                            <h3>Container Orchestration</h3>
+                            <span class="project-category">Containers</span>
                         </div>
+                        <p class="project-description">
+                            Implemented Kubernetes cluster management and container orchestration for microservices architecture. 
+                            Optimized resource utilization and implemented auto-scaling policies.
+                        </p>
                         <div class="project-actions">
                             <a href="https://sandeepkancharla-04.github.io/DevOps-Portfolio-" target="_blank" class="btn btn-outline">Live Demo</a>
-                            <button onclick="showSourceCode('multi-cloud')" class="btn btn-ghost">Source Code</button>
+                            <button onclick="showSourceCode('container-orchestration')" class="btn btn-ghost">Source Code</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tag">Prometheus</span>
+                                <span class="tech-tag">Grafana</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Infrastructure Monitoring Dashboard</h3>
-                        <p>Developed a centralized monitoring and logging solution using ELK Stack, Prometheus, and Grafana to provide real-time insights into infrastructure health and application performance.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">ELK Stack</span>
-                            <span class="tech-tag">Prometheus</span>
-                            <span class="tech-tag">Grafana</span>
-                            <span class="tech-tag">Python</span>
+                        <div class="project-header">
+                            <h3>Monitoring Solution</h3>
+                            <span class="project-category">Monitoring</span>
                         </div>
+                        <p class="project-description">
+                            Developed a comprehensive monitoring and alerting system using Prometheus, Grafana, and AWS CloudWatch. 
+                            Implemented custom dashboards and automated alerting mechanisms.
+                        </p>
                         <div class="project-actions">
                             <a href="https://sandeepkancharla-04.github.io/DevOps-Portfolio-" target="_blank" class="btn btn-outline">Live Demo</a>
-                            <button onclick="showSourceCode('multi-cloud')" class="btn btn-ghost">Source Code</button>
+                            <button onclick="showSourceCode('monitoring-solution')" class="btn btn-ghost">Source Code</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Journey Section -->
+    <section class="tech-journey" id="tech-journey">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Tech Journey</h2>
+                <p class="section-subtitle">Evolution of skills and expertise over the years</p>
+            </div>
+            <div class="journey-container">
+                <div class="journey-timeline">
+                    <div class="journey-item" data-year="2016">
+                        <div class="journey-marker">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h3>The Beginning</h3>
+                            <p>Started with C++ and Java programming, building my first applications and understanding the fundamentals of software development.</p>
+                            <div class="tech-stack">
+                                <span class="tech-item">C++</span>
+                                <span class="tech-item">Java</span>
+                                <span class="tech-item">Data Structures</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-item" data-year="2018">
+                        <div class="journey-marker">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h3>Database & Web Development</h3>
+                            <p>Dove into web technologies, learned about databases, and built full-stack applications with modern frameworks.</p>
+                            <div class="tech-stack">
+                                <span class="tech-item">JavaScript</span>
+                                <span class="tech-item">React</span>
+                                <span class="tech-item">Node.js</span>
+                                <span class="tech-item">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-item" data-year="2020">
+                        <div class="journey-marker">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h3>Cloud Discovery</h3>
+                            <p>Discovered the power of cloud computing, started learning AWS services, and realized the potential of scalable infrastructure.</p>
+                            <div class="tech-stack">
+                                <span class="tech-item">AWS EC2</span>
+                                <span class="tech-item">S3</span>
+                                <span class="tech-item">Lambda</span>
+                                <span class="tech-item">RDS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-item" data-year="2021">
+                        <div class="journey-marker">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h3>Containerization Era</h3>
+                            <p>Mastered Docker and Kubernetes, learned about microservices architecture, and implemented container orchestration solutions.</p>
+                            <div class="tech-stack">
+                                <span class="tech-item">Docker</span>
+                                <span class="tech-item">Kubernetes</span>
+                                <span class="tech-item">Microservices</span>
+                                <span class="tech-item">Helm</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-item" data-year="2022">
+                        <div class="journey-marker">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h3>DevOps Mastery</h3>
+                            <p>Became proficient in CI/CD pipelines, Infrastructure as Code, monitoring, and automation tools. Focused on reliability and scalability.</p>
+                            <div class="tech-stack">
+                                <span class="tech-item">Jenkins</span>
+                                <span class="tech-item">Terraform</span>
+                                <span class="tech-item">Ansible</span>
+                                <span class="tech-item">Prometheus</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-item" data-year="2023">
+                        <div class="journey-marker">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h3>Cloud Architect</h3>
+                            <p>Currently designing and implementing complex cloud architectures, optimizing costs, and ensuring high availability and security.</p>
+                            <div class="tech-stack">
+                                <span class="tech-item">Multi-Cloud</span>
+                                <span class="tech-item">Serverless</span>
+                                <span class="tech-item">Security</span>
+                                <span class="tech-item">Cost Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Milestones</h2>
+                <p class="section-subtitle">Key accomplishments that define my professional journey</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>AWS Certified Solutions Architect</h3>
+                    <p>Validated expertise in designing distributed systems on AWS platform</p>
+                    <div class="achievement-meta">
+                        <span class="achievement-date">2023</span>
+                        <span class="achievement-type">Certification</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Cost Optimization Champion</h3>
+                    <p>Reduced cloud infrastructure costs by 40% through strategic optimization</p>
+                    <div class="achievement-meta">
+                        <span class="achievement-date">2023</span>
+                        <span class="achievement-type">Business Impact</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Excellence</h3>
+                    <p>Implemented zero-downtime security updates across 50+ production systems</p>
+                    <div class="achievement-meta">
+                        <span class="achievement-date">2023</span>
+                        <span class="achievement-type">Technical</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Graduated with distinction and published research on cloud computing</p>
+                    <div class="achievement-meta">
+                        <span class="achievement-date">2023</span>
+                        <span class="achievement-type">Academic</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation Award</h3>
+                    <p>Developed automated deployment pipeline that reduced deployment time by 80%</p>
+                    <div class="achievement-meta">
+                        <span class="achievement-date">2022</span>
+                        <span class="achievement-type">Innovation</span>
                     </div>
                 </div>
             </div>
@@ -616,11 +744,8 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Contact</span>
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-description">
-                    Let's build something amazing together.
-                </p>
+                <h2>Get In Touch</h2>
+                <p>Ready to discuss your next project? I'd love to hear from you.</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
@@ -652,57 +777,75 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://linkedin.com/in/sandeepkancharla" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
                         <a href="https://github.com/SandeepKancharla-04" target="_blank" class="social-link">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="mailto:sunnysandeep0707@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
+                        <a href="https://linkedin.com/in/sandeep-kancharla" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/sandeep_devops" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
                         </a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <h3>Send Me a Message</h3>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                        <div id="form-status"></div>
-                    </form>
-                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
+
+    <!-- Source Code Modal -->
+    <div id="sourceModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Source Code</h3>
+                <span class="close" onclick="closeSourceModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="code-tabs">
+                    <button class="tab-btn active" onclick="showTab('terraform')">Terraform</button>
+                    <button class="tab-btn" onclick="showTab('docker')">Docker</button>
+                    <button class="tab-btn" onclick="showTab('jenkins')">Jenkins</button>
+                </div>
+                <div class="code-container">
+                    <pre id="codeContent"><code id="codeDisplay"></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2025 Sandeep K. All rights reserved.</p>
+                    <p>&copy; 2024 Sandeep&nbsp;K. All rights reserved.</p>
                 </div>
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
